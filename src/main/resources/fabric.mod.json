@@ -1,29 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "nethreact",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "The Nether Reactor",
+  "description": "Bring Nether Reactor to Minecraft.",
   "authors": [
-    "Me!"
+    "AndEditor7"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/AndEditor7/nether-reactor"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/nethreact/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.andedit.nethreact.Main"
+    ],
+    "client": [
+      "com.andedit.nethreact.client.Client"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "nethreact.mixins.json"
   ],
 
   "depends": {
